@@ -28,6 +28,8 @@ from keras.layers import Dense
 data = pd.read_csv('Churn_Modelling.csv', index_col = 'RowNumber')
 print(data.shape)
 print(data.head())
+print(data.columns())
+print(data.unique())
 
 '''Data Preprocessing'''
 data.isnull().sum() # No null values
